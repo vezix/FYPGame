@@ -16,8 +16,10 @@ public class Cutscene : MonoBehaviour
 
     void Start()
     {
+        Time.timeScale = 1;
+        textDisplay.text = "";
         StartCoroutine(Type());
-    }
+    }   
 
     void Update()
     {
@@ -29,11 +31,15 @@ public class Cutscene : MonoBehaviour
 
     IEnumerator Type()
     {
-        foreach (char letter in sentences[index].ToCharArray())
+      
+       foreach (char letter in sentences[index].ToCharArray())
         {
             textDisplay.text += letter;
             yield return new WaitForSeconds(typingSpeed);
+            
         }
+       
+
     }
 
     public void NextSentence()
@@ -51,6 +57,7 @@ public class Cutscene : MonoBehaviour
             textDisplay.text = "";
             continueButton.SetActive(false);
             SceneManager.LoadScene(scene);
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 

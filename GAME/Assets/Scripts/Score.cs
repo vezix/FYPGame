@@ -13,6 +13,7 @@ public class Score : MonoBehaviour
 
     private void Update()
     {
+        timeleft = Mathf.Round(timeleft);
         displayTime = timeleft;
         displayGold = gold;
     }

@@ -76,12 +76,14 @@ public class GameManager : MonoBehaviour
     public void AddGold(float goldToAdd)
     {
         currentGold += goldToAdd;
+        currentGold = Mathf.Round(currentGold * 100) / 100;
         goldText.text = "Money:" + currentGold;
     }
 
     public void RemoveGold(float goldToRemove)
     {
         currentGold -= goldToRemove;
+        currentGold = Mathf.Round(currentGold * 100)/100;
         goldText.text = "Money:" + currentGold;
     }
 

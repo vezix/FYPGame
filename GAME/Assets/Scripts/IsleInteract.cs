@@ -6,12 +6,12 @@ public class IsleInteract : MonoBehaviour
 {
     public GameObject IslePanel;
     public GameObject PanelPrompt;
-    public CameraController Playercamera;
     public PlayerController PController;
     private bool triggerEntered = false;
     public Item[] item = new Item[3];
     public int[] quantity = new int[3];
     public ItemIsleDisplay[] display = new ItemIsleDisplay[3];
+    public bool[] Discount = new bool[] {false,false,false};
 
     //private int[] Maxquantity = new int[3];
 /*    private void Start()
