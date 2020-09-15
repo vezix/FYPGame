@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class InCartDisplay : MonoBehaviour
 {
+    //Make Sure GameObject is set Active first before anything to ensure no bug occurs.
+
     public Transform itemsParent;
     public GameObject cartDisplay;
     public Text NoOfItems;
@@ -14,19 +16,12 @@ public class InCartDisplay : MonoBehaviour
 
     int incartCount = 0;
 
-    // Start is called before the first frame update
     void Start()
     {
         cartDisplay.SetActive(false);
         inventory = Inventory.instance;
         inventory.onItemChangedCallback += UpdateUI;
         slots = itemsParent.GetComponentsInChildren<InventorySlot>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
     
     void UpdateUI()

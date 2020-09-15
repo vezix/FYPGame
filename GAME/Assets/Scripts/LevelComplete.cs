@@ -18,7 +18,7 @@ public class LevelComplete : MonoBehaviour
         TimerScore = Score.timeleft;
         GoldScore = Score.gold * 10;
         Total = 1000 + TimerScore + GoldScore;
-        scoreDisplay.text = "Score: \nObjective \t=1000 \nTimer " + Score.timeleft.ToString() + "seconds \t =" + TimerScore.ToString() + "\nGold " + Score.gold.ToString() + "\t =" + GoldScore.ToString() ; 
+        scoreDisplay.text = "Score:\nObjective = 1000 \nTimer " + Score.timeleft.ToString() + " seconds = " + TimerScore.ToString() + "\nGold " + Score.gold.ToString() + " = " + GoldScore.ToString() ; 
         scoreTotal.text = "Total: " + Total.ToString();
     }
 
