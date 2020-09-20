@@ -5,75 +5,85 @@ using TMPro;
 
 public class NPCInteraction : MonoBehaviour
 {
-    public bool hasInteract = false;
-   // bool hasEntered = false;
-
+    //public bool hasInteract = false;
+    private bool currentInteract = false;
+    private bool insideTrigger;
     public TextMeshProUGUI textDisplay;
     public string[] sentences;
     private int index;
     public float typingSpeed;
+    public PlayerController PController;
 
     public GameObject DialoguePanel;
     public GameObject NPCPrompt;
+    public GameObject continueButton;
 
-    // Check cutscene Script, frankenstein your way into this script!!!
-    // Check PlayerMovement Make sure it wont move 
+    public bool getCurrentInteract()
+    {
+        return currentInteract;
+    }
 
     void OnTriggerEnter(Collider Other)
     {
         if (Other.CompareTag("Player"))
         {
             NPCPrompt.SetActive(true);
-           // hasEntered = true;
+            insideTrigger = true;
         }
     }
+
 
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             NPCPrompt.SetActive(false);
-          //  hasEntered = false;
+            insideTrigger = false;
         }
     }
     void Update()
-    {/*
-            if (hasEntered == true && Input.GetKeyDown(KeyCode.Space) && hasInteract == false)
-            {
-                Displaytext();
-            }
-            if (textDisplay.text == sentences[index] && Input.GetKeyDown(KeyCode.LeftShift) && hasInteract == false)
-            {
-                NextSentence();
-            }
-
-            if (hasEntered == true && Input.GetKeyDown(KeyCode.Space) && hasInteract == true)
-            {
-
-                HasInteractSentence();
-            }*/
-    }
-
-    public void HasInteractSentence()
     {
-        DialoguePanel.SetActive(true);
-        textDisplay.text = "I have Spoken";
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if(insideTrigger == true){
+        if (Cursor.lockState == CursorLockMode.Locked && Input.GetKeyDown(KeyCode.LeftShift) && currentInteract == false){
+            index = 0;
+            currentInteract = true;
+            NPCPrompt.SetActive(false);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            Displaytext();
+            PController.enabled = false;
+        }
+        }
+        if (textDisplay.text == sentences[index])
         {
-            DialoguePanel.SetActive(false);
-            textDisplay.text = "";
+            continueButton.SetActive(true);
+        }
+        if (!DialoguePanel.activeSelf)
+        {
+            currentInteract = false;
         }
     }
 
-        IEnumerator Type()
+    IEnumerator Type()
     {
-
+        //if (hasInteract == false)
         foreach (char letter in sentences[index].ToCharArray())
         {
             textDisplay.text += letter;
             yield return new WaitForSeconds(typingSpeed);
 
         }
+        /*else 
+        { 
+         string finishedsentence = "I have Spoken";
+            foreach (char letter in finishedsentence)
+            {
+                textDisplay.text += letter;
+                yield return new WaitForSeconds(typingSpeed);
+            }
+         continueButton.SetActive(true);
+        }
+        */
     }
 
     void Displaytext()
@@ -85,6 +95,8 @@ public class NPCInteraction : MonoBehaviour
 
     public void NextSentence()
     {
+        continueButton.SetActive(false);
+
         if (index < sentences.Length - 1)
         {
             index++;
@@ -93,8 +105,11 @@ public class NPCInteraction : MonoBehaviour
         }
         else
         {
+            Cursor.lockState = CursorLockMode.Locked;
+            NPCPrompt.SetActive(true);
             DialoguePanel.SetActive(false);
-            hasInteract = true;
+            PController.enabled = true;
+            //hasInteract = true;
             textDisplay.text = "";
         }
     }
