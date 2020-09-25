@@ -17,26 +17,4 @@ public class DestinationChange : MonoBehaviour
             this.gameObject.transform.position = new Vector3(xPos, 1.5f, zPos);
         }
     }
-
-  /*  private void OnTriggerStay(Collider other)
-    {
-        if (other.tag == "NPC")
-        {
-            xPos = Random.Range(-34, 12);
-            zPos = Random.Range(-16, 31);
-
-            this.gameObject.transform.position = new Vector3(xPos, 1.5f, zPos);
-        }
-    }
-  */
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

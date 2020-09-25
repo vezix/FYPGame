@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class NPCInteraction : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class NPCInteraction : MonoBehaviour
     private bool insideTrigger;
     public TextMeshProUGUI textDisplay;
     public string[] sentences;
-    private int index;
+    private int index = 0;
     public float typingSpeed;
     public PlayerController PController;
 
@@ -41,6 +42,10 @@ public class NPCInteraction : MonoBehaviour
             insideTrigger = false;
         }
     }
+    private void Start()
+    {
+        continueButton.GetComponent<Button>().onClick.AddListener(NextSentence);
+    }
     void Update()
     {
         if(insideTrigger == true){
@@ -57,6 +62,7 @@ public class NPCInteraction : MonoBehaviour
         if (textDisplay.text == sentences[index])
         {
             continueButton.SetActive(true);
+            //continueButton.onClick.AddListener(NextSentence();
         }
         if (!DialoguePanel.activeSelf)
         {
@@ -73,17 +79,6 @@ public class NPCInteraction : MonoBehaviour
             yield return new WaitForSeconds(typingSpeed);
 
         }
-        /*else 
-        { 
-         string finishedsentence = "I have Spoken";
-            foreach (char letter in finishedsentence)
-            {
-                textDisplay.text += letter;
-                yield return new WaitForSeconds(typingSpeed);
-            }
-         continueButton.SetActive(true);
-        }
-        */
     }
 
     void Displaytext()

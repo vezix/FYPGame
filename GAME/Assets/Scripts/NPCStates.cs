@@ -7,47 +7,39 @@ using UnityEngine.AI;
 public class NPCStates : MonoBehaviour
 {
     // Start is called before the first frame update
-    public Transform CounterParents;
     public Transform IsleParents;
     public int checkingIsle;
-    int checkingIslecounter = 0;
+    [HideInInspector]
 
     NavMeshAgent theAgent;
 
-    BoxCollider[] counterNodes;
     BoxCollider[] isleNodes;
     void Start()
     {
         theAgent = GetComponent<NavMeshAgent>();
 
-        counterNodes = CounterParents.GetComponentsInChildren<BoxCollider>();
         isleNodes = IsleParents.GetComponentsInChildren<BoxCollider>();
+        Destination(); 
     }
 
-    void Destination()
+    public void Destination()
     {
-        if (checkingIslecounter < checkingIsle) {
             int i = Random.Range(0, isleNodes.Length);
             theAgent.SetDestination(isleNodes[i].transform.position);
-            checkingIsle++;
-        }
-        else
-        {
-            int i = Random.Range(0, counterNodes.Length);
-            theAgent.SetDestination(counterNodes[i].transform.position);
-
-        }
+            Debug.Log(checkingIsle);
     }
-
 
     // Update is called once per frame
     void Update()
-    {
+    { 
         bool interact = GetComponent<NPCInteraction>().getCurrentInteract();
         if (interact == true)
         {
             theAgent.isStopped = true;
         }
-        else theAgent.isStopped = false;
+        else if (interact != true)
+        {
+            theAgent.isStopped = false;
+        }
     }
 }
