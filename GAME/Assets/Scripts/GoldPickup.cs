@@ -13,7 +13,6 @@ public class GoldPickup : MonoBehaviour
         {
             FindObjectOfType<GameManager>().AddGold(value);
             Destroy(gameObject);
-            Instantiate(PickupEffect, transform.position, transform.rotation);
         }
     }
 }
