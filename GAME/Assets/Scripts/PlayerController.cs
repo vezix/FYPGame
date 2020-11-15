@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     public float jumpForce;
     public CharacterController controller;
     public float gravityscale;
-    public Animator anim;
+    //public Animator anim;
     public Transform pivot;
     public float rotateSpeed;
     public GameObject playerModel;
@@ -67,8 +67,8 @@ public class PlayerController : MonoBehaviour
             playerModel.transform.rotation = Quaternion.Slerp(playerModel.transform.rotation, newRotation, rotateSpeed * Time.deltaTime);
         }
         
-        anim.SetBool("isGrounded", controller.isGrounded);
-        anim.SetFloat("Speed", (Mathf.Abs(Input.GetAxis("Horizontal")) + Mathf.Abs(Input.GetAxis("Vertical"))));
+        //anim.SetBool("isGrounded", controller.isGrounded);
+        //anim.SetFloat("Speed", (Mathf.Abs(Input.GetAxis("Horizontal")) + Mathf.Abs(Input.GetAxis("Vertical"))));
     }
 
     public void Knockback(Vector3 direction)

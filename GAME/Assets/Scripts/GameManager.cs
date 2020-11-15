@@ -112,7 +112,7 @@ public class GameManager : MonoBehaviour
 
     public void gamerestart()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene("Level1");
     }
 
     public void MainMenu()
