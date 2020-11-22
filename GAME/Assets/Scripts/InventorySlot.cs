@@ -29,7 +29,7 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         if(item != null)
         {
             tooltip.transform.position = transform.position;
-            tooltipText.text = item.name + "\nexp in: " + item.price + " days";
+            tooltipText.text = item.name + "\nexp in: " + item.expiry + " days" + "\ntype: " +item.type + "\nQuality: " + item.Quality;
             tooltip.SetActive(true);
         }
 

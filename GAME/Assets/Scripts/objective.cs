@@ -8,9 +8,14 @@ public class objective : MonoBehaviour
     // Start is called before the first frame update
     public Item item;
     public int quantity;
+    public int expiry;
     public Text itemName;
     public Image checkbox;
     public bool Check = false;
+
+    public bool checkitemName;
+    public bool checkitemType;
+    public bool checkitemPrice;
 
 
     Inventory inventory;
@@ -24,7 +29,15 @@ public class objective : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Check = objectiveMet();
+        if (checkitemName)
+        {
+            Check = objectiveName();
+        }
+        if (checkitemType)
+        {
+            Check = objectiveType();
+        }
+
         if (Check)
         {
             checkbox.enabled = true;
@@ -32,12 +45,17 @@ public class objective : MonoBehaviour
         else checkbox.enabled = false;
     }
 
-    bool objectiveMet()
+    bool objectiveName()
     {
         if (inventory.quantity(item) == quantity)
             return true;
-
         else return false;
+    }
 
+    bool objectiveType()
+    {
+        if (inventory.Typequantity(item) == quantity)
+            return true;
+        else return false;
     }
 }

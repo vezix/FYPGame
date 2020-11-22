@@ -11,6 +11,8 @@ public class InCartDisplay : MonoBehaviour
     public GameObject cartDisplay;
     public Text NoOfItems;
     Inventory inventory;
+    public PlayerController PController;
+
 
     InventorySlot[] slots;
 
@@ -44,7 +46,8 @@ public class InCartDisplay : MonoBehaviour
     public void closePanel()
     {
         cartDisplay.SetActive(false);
-        Time.timeScale = 1f;
+        PController.enabled = true;
+        //Time.timeScale = 1f;
         Cursor.lockState = CursorLockMode.Locked;
     }
 }

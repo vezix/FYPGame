@@ -21,7 +21,7 @@ public class NPCStatesStartOver : MonoBehaviour
             agent.SetDestination(Points[i].transform.position);
             Debug.Log("Onto Next Isle");
             NPCStates CheckingIsle = other.GetComponent<NPCStates>();
-            CheckingIsle.checkingIsle = 5;
+            CheckingIsle.checkingIsle = i;
             Debug.Log(CheckingIsle.checkingIsle);
         }
     }

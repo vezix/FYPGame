@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     public GameObject GameoverDisplay;
     public GameObject PauseDisplay;
     public string lvlcomplete;
+    public PlayerController PController;
 
 
     // Start is called before the first frame update
@@ -36,7 +37,8 @@ public class GameManager : MonoBehaviour
             cartDisplay.SetActive(true);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
-            Time.timeScale = 0f;
+            PController.enabled = false;
+            //Time.timeScale = 0f;
         }
 
         if (Cursor.lockState == CursorLockMode.Locked && Input.GetKeyDown(KeyCode.Escape))

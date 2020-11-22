@@ -24,11 +24,10 @@ public class NPCStates_Counter : MonoBehaviour
     IEnumerator goout(Collider other)
     {
         anim.Play("Searching Pockets");
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(2);
         anim.Play("Idle");
         if (agent != null)
         {
-                agent.ResetPath();
                 agent.SetDestination(outside.transform.position);
                 Debug.Log("Onto Outside");
 

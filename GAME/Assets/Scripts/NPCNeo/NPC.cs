@@ -12,15 +12,14 @@ public class NPC : MonoBehaviour
     private bool insideTrigger;
     public GameObject NPCPrompt;
     public GameObject dialogpanel;
-
-
+    private Transform player;
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
+            player = other.transform;
             NPCPrompt.SetActive(true);
             insideTrigger = true;
-            
         }
     }
     private void OnTriggerExit(Collider other)
@@ -46,8 +45,8 @@ public class NPC : MonoBehaviour
             }
             if (!dialogpanel.activeSelf)
             {
-                NPCPrompt.SetActive(true);
                 currentInteract = false;
+                NPCPrompt.SetActive(true);
             }
         }
 
@@ -58,5 +57,9 @@ public class NPC : MonoBehaviour
         return currentInteract;
     }
 
+    public Transform getPlayerTransform()
+    {
+        return player;
+    }
 
 }

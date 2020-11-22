@@ -67,5 +67,44 @@ public class Inventory : MonoBehaviour
         return a;
     }
 
+    public int Typequantity(Item item)
+    {
+        int a = 0;
+        for (int i = 0; i < items.Count; i++)
+        {
+            if (items[i].type == item.type)
+            {
+                a++;
+            }
+        }
+        return a;
+    }
+
+    public int TypePriceQuantity(Item item,int price)
+    {
+        int a = 0;
+        for (int i = 0; i < items.Count; i++)
+        {
+            if (items[i].type == item.type && item.price >= price) 
+            {
+                a++;
+            }
+        }
+        return a;
+    }
+
+    public int TypeExpQuantity(Item item,int exp)
+    {
+        int a = 0;
+        for (int i = 0; i < items.Count; i++)
+        {
+            if (items[i].type == item.type && item.expiry <= exp)
+            {
+                a++;
+            }
+        }
+        return a;
+    }
+
 
 }
