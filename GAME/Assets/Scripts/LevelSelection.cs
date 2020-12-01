@@ -7,6 +7,9 @@ using UnityEngine.SceneManagement;
 public class LevelSelection : MonoBehaviour
 {
     public Button[] lvlButtons;
+    public string level1cutscenename;
+    public string level2cutscenename;
+    public string level3cutscenename;
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +30,21 @@ public class LevelSelection : MonoBehaviour
 
     public void level1()
     {
-        SceneManager.LoadScene("level1 cutscene");
+        SceneManager.LoadScene(level1cutscenename);
+    }
+
+    public void level2()
+    {
+        SceneManager.LoadScene(level1cutscenename);
+    }
+    public void level3()
+    {
+        SceneManager.LoadScene(level3cutscenename);
+    }
+
+    public void levelTuto()
+    {
+        SceneManager.LoadScene("TutoLevel");
     }
 
 }

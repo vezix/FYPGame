@@ -122,6 +122,11 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("menu");
     }
 
+    public void levelSelect()
+    {
+        SceneManager.LoadScene("Level Select");
+    }
+
     public void levelcomplete()
     {
         SceneManager.LoadScene(lvlcomplete);

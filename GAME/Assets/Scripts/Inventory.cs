@@ -54,6 +54,19 @@ public class Inventory : MonoBehaviour
         else return false;
     }
 
+    public int quality(Item item)
+    {
+        int a = 0;
+        for (int i = 0; i < items.Count; i++)
+        {
+            if (items[i].Quality >= item.Quality)
+            {
+                a++;
+            }
+        }
+        return a;
+    }
+
     public int quantity(Item item)
     {
         int a=0;
@@ -80,12 +93,12 @@ public class Inventory : MonoBehaviour
         return a;
     }
 
-    public int TypePriceQuantity(Item item,int price)
+    public int TypePriceQuantity(Item item)
     {
         int a = 0;
         for (int i = 0; i < items.Count; i++)
         {
-            if (items[i].type == item.type && item.price >= price) 
+            if (items[i].type == item.type && items[i].price <= item.price) 
             {
                 a++;
             }
@@ -93,18 +106,17 @@ public class Inventory : MonoBehaviour
         return a;
     }
 
-    public int TypeExpQuantity(Item item,int exp)
+    public int TypeExpQuantity(Item item)
     {
         int a = 0;
         for (int i = 0; i < items.Count; i++)
         {
-            if (items[i].type == item.type && item.expiry <= exp)
+            if (items[i].type == item.type && items[i].expiry >= item.expiry)
             {
                 a++;
             }
         }
         return a;
     }
-
 
 }

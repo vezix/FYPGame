@@ -12,6 +12,7 @@ public class CheckOut : MonoBehaviour
     public GameObject NextSceneButton;
 
     public Transform ObjectivesParents;
+    //public int qualityGoal;
     int checkObjective;
     objective[] Objectives;
 
@@ -31,10 +32,12 @@ public class CheckOut : MonoBehaviour
                 if (Objectives[i].Check == true)
                 {
                     checkObjective++;
+                    //totalquality += Objectives[i].reachedQuality;
                 }
             }
-            if (checkObjective==Objectives.Length)
-            {
+            //&& totalquality >= qualityGoal (this goes into if statement below) 
+            if (checkObjective == Objectives.Length )
+            { 
                 Score.gold += FindObjectOfType<GameManager>().currentGold;
                 Score.timeleft += FindObjectOfType<GameManager>().timeRemaining;
                 ItemFound.text = "All of the item has been found!";

@@ -10,7 +10,8 @@ public class ItemIsleDisplay : MonoBehaviour
     public Text itemExp;
     public Text itemPrice;
     public Image itemImage;
-    public Text itemLeftDisplay; 
+    public Text itemLeftDisplay;
+    public Text itemQuality;
     public Text NoInCart;
     public int i;
     [HideInInspector]
@@ -53,6 +54,7 @@ public class ItemIsleDisplay : MonoBehaviour
         itemName.text = item.name;
         itemExp.text = "Exp in:" + item.expiry;
         itemPrice.text = "Price:" + truePrice[i];
+        itemQuality.text = "Quality: " + item.Quality;
         itemImage.sprite = item.image;
         itemLeftDisplay.text = "Item left:" + triggerArea.quantity[i];
         NoInCart.text = "In Cart:" + inventory.quantity(item);
@@ -66,9 +68,8 @@ public class ItemIsleDisplay : MonoBehaviour
         {
             if (triggerArea.quantity[i] > 0)
             {
-                FindObjectOfType<GameManager>().RemoveGold(truePrice[i]);
-                triggerArea.quantity[i] -= 1;
-                inventory.Add(item);
+                FindObjectOfType<GameManager>().RemoveGold(truePrice[i]);                
+                if(inventory.Add(item)) triggerArea.quantity[i] -= 1; ;
                 itemLeftDisplay.text = "Item left:" + triggerArea.quantity[i];
                 NoInCart.text = "In Cart:" + inventory.quantity(item);
             }

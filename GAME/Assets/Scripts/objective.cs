@@ -8,14 +8,19 @@ public class objective : MonoBehaviour
     // Start is called before the first frame update
     public Item item;
     public int quantity;
-    public int expiry;
     public Text itemName;
     public Image checkbox;
+    [HideInInspector]
     public bool Check = false;
 
-    public bool checkitemName;
-    public bool checkitemType;
-    public bool checkitemPrice;
+    public bool checkitemName = false;
+    public bool checkitemType = false;
+    public bool checkitemTypePrice = false;
+    public bool checkingitemTypeExp = false;
+    public bool checkitemQuality = false;
+
+    //private int reachedQuality = 0;
+
 
 
     Inventory inventory;
@@ -23,12 +28,20 @@ public class objective : MonoBehaviour
     void Start()
     {
         inventory = Inventory.instance;
-        itemName.text = item.name + " = " + quantity;
+        if (checkitemQuality)
+            itemName.text = item.name + ", >= " + quantity;
+        else
+        itemName.text = item.name + ", == " + quantity;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (checkitemQuality)
+        {
+            Check = QualityCheck();
+        }
+
         if (checkitemName)
         {
             Check = objectiveName();
@@ -38,11 +51,28 @@ public class objective : MonoBehaviour
             Check = objectiveType();
         }
 
+        if (checkingitemTypeExp)
+        {
+            Check = objectiveTypeExp();
+        }
+
+        if (checkitemTypePrice)
+        {
+            Check = objectiveTypePrice();
+        }
+
         if (Check)
         {
             checkbox.enabled = true;
         }
         else checkbox.enabled = false;
+    }
+
+    bool QualityCheck()
+    {
+        if (inventory.quality(item) >= quantity)
+            return true;
+        else return false;
     }
 
     bool objectiveName()
@@ -55,6 +85,20 @@ public class objective : MonoBehaviour
     bool objectiveType()
     {
         if (inventory.Typequantity(item) == quantity)
+            return true;
+        else return false;
+    }
+
+    bool objectiveTypePrice()
+    {
+        if (inventory.TypePriceQuantity(item) == quantity)
+            return true;
+        else return false;
+    }
+
+    bool objectiveTypeExp()
+    {
+        if (inventory.TypeExpQuantity(item) == quantity)
             return true;
         else return false;
     }

@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Cutscene : MonoBehaviour
 {
     public string scene;
+    public string LevelScene;
 
     public TextMeshProUGUI textDisplay;
     public string[] sentences;
@@ -63,6 +64,6 @@ public class Cutscene : MonoBehaviour
 
     public void skipScene()
     {
-        SceneManager.LoadScene(scene);
+        SceneManager.LoadScene(LevelScene);
     }
 }

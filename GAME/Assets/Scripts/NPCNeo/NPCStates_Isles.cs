@@ -10,6 +10,7 @@ public class NPCStates_Isles : MonoBehaviour
     public Transform CounterParent; 
     private BoxCollider[] Counter;
     private Animator anim;
+    public int waiting = 5;
     NavMeshAgent agent;
 
     private void Start()
@@ -35,7 +36,7 @@ public class NPCStates_Isles : MonoBehaviour
         NPCStates CheckingIsle = other.GetComponent<NPCStates>();
 
         anim.Play("Thinking");
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(waiting);
         anim.Play("Idle");
         if (agent != null)
         {
