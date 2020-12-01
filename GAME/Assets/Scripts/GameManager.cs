@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
     public string lvlcomplete;
     public PlayerController PController;
 
+    //forcalculating wrong items at checkout/score 
+    public int numberofitemsObjective;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +29,9 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1;
         goldText.text = "Money: " + currentGold;
         timerIsRunning = true;
+        Score.gold = 0;
+        Score.timeleft = 0;
+        Score.wrongObjectives = 0;
     }
 
     // Update is called once per frame

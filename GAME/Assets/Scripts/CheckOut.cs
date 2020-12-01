@@ -37,7 +37,8 @@ public class CheckOut : MonoBehaviour
             }
             //&& totalquality >= qualityGoal (this goes into if statement below) 
             if (checkObjective == Objectives.Length )
-            { 
+            {
+                Score.wrongObjectives = inventory.items.Count - FindObjectOfType<GameManager>().numberofitemsObjective;
                 Score.gold += FindObjectOfType<GameManager>().currentGold;
                 Score.timeleft += FindObjectOfType<GameManager>().timeRemaining;
                 ItemFound.text = "All of the item has been found!";
