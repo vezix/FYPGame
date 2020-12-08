@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     public GameObject PauseDisplay;
     public string lvlcomplete;
     public PlayerController PController;
+    public string reloadScene="Level1";
 
     //forcalculating wrong items at checkout/score 
     public int numberofitemsObjective;
@@ -119,7 +120,7 @@ public class GameManager : MonoBehaviour
 
     public void gamerestart()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene(reloadScene);
     }
 
     public void MainMenu()

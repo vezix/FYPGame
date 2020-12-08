@@ -11,10 +11,16 @@ public class LevelComplete : MonoBehaviour
     public Text scoreComments;
      float TimerScore;
      float GoldScore;
-     float Total;
+    [HideInInspector]
+    public float Total;
      float wrongobjective;
     public float minimumScore;
     public int unlocklevel;
+    public string win1;
+    public string win2;
+    public string lose;
+    public string proceedScene="level select";
+    public bool finalLevel=false;
 
     void Start()
     {
@@ -27,7 +33,11 @@ public class LevelComplete : MonoBehaviour
 
         if (Total>= minimumScore)
         {
-            scoreComments.text = "you've learned the importance of time and focusing objectives while shopping! \ngoodjob! let's proceed onto next objective!";
+            scoreComments.text = win1 + "\n" + win2;
+            if (finalLevel)
+            {
+                proceedScene = "credit";
+            }
             if (unlocklevel > PlayerPrefs.GetInt("levelAt"))
             {
                 PlayerPrefs.SetInt("levelAt", unlocklevel);
@@ -36,7 +46,7 @@ public class LevelComplete : MonoBehaviour
 
         else
         {
-            scoreComments.text = " nice try... \n but i believe you can do better, lets try again!";
+            scoreComments.text = lose;
         } 
 
 
@@ -45,7 +55,7 @@ public class LevelComplete : MonoBehaviour
 
     public void Levelselect()
     {
-        SceneManager.LoadScene("level select");
+        SceneManager.LoadScene(proceedScene);
     }
 
 }

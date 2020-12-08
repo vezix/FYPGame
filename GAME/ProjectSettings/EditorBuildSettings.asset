@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Level Select.unity
     guid: 75488c69c7cc8934d961a9a3bbf789ff
   - enabled: 1
+    path: Assets/Scenes/TutoLevel.unity
+    guid: a9eb4825df6a7454090917bf9153131c
+  - enabled: 1
     path: Assets/Scenes/Cutscene1/Level1 CutsceneSc1.unity
     guid: ba6ba0f8ae6ff374a81c2187b0c68d8b
   - enabled: 1
@@ -45,6 +48,84 @@ EditorBuildSettings:
     path: Assets/Scenes/Level1 complete.unity
     guid: 6e48a986fd0b2bf468e486e3b42ddb89
   - enabled: 1
-    path: Assets/Scenes/TutoLevel.unity
-    guid: a9eb4825df6a7454090917bf9153131c
+    path: Assets/Scenes/Cutscene2/Level2 CutsceneSc1.unity
+    guid: 02a82ce47d5f38a41bd124238b5b657f
+  - enabled: 1
+    path: Assets/Scenes/Cutscene2/Level2 CutsceneSc2.unity
+    guid: 30c1f8a2ffcf1534080960af20115a9c
+  - enabled: 1
+    path: Assets/Scenes/Cutscene2/Level2 CutsceneSc3.unity
+    guid: 065bd70f038db5b49bbb98fd849814ef
+  - enabled: 1
+    path: Assets/Scenes/Cutscene2/Level2 CutsceneSc4.unity
+    guid: 1df4fbee42f606a4fbde9b3f270c409f
+  - enabled: 1
+    path: Assets/Scenes/Cutscene2/Level2 CutsceneSc5.unity
+    guid: 5f2237dae8f716645b4145ab1b898f4d
+  - enabled: 1
+    path: Assets/Scenes/Cutscene2/Level2 CutsceneSc6.unity
+    guid: 8a98ef8931e4f8b49a159389f3d86657
+  - enabled: 1
+    path: Assets/Scenes/Cutscene2/Level2 CutsceneSc7.unity
+    guid: 356b82919c09e5641ad60161bb970c23
+  - enabled: 1
+    path: Assets/Scenes/Cutscene2/Level2 CutsceneSc8.unity
+    guid: 33364e276ad1240499bd161fc7e0b563
+  - enabled: 1
+    path: Assets/Scenes/Level2 loading.unity
+    guid: f252f52e9445be34cb7083b19b1c2bde
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: c57eabd170df8a7409c642d6c068cf1b
+  - enabled: 1
+    path: Assets/Scenes/Level2 complete.unity
+    guid: dc1bbca933e562d41930266875a1ebaa
+  - enabled: 1
+    path: Assets/Scenes/Cutscene3/Level3 CutsceneSc1.unity
+    guid: 184f2681883e338479c724746616be77
+  - enabled: 1
+    path: Assets/Scenes/Cutscene3/Level3 CutsceneSc2.unity
+    guid: c4a2579ce11544a4d8f1b358d0813862
+  - enabled: 1
+    path: Assets/Scenes/Cutscene3/Level3 CutsceneSc3.unity
+    guid: a616efb2eda640b4a97d5ae0b3988b95
+  - enabled: 1
+    path: Assets/Scenes/Cutscene3/Level3 CutsceneSc4.unity
+    guid: 75855484e4e431d408dbe9f3f421035c
+  - enabled: 1
+    path: Assets/Scenes/Cutscene3/Level3 CutsceneSc5.unity
+    guid: cff98ea370ba49742b10f4fc81c5f458
+  - enabled: 1
+    path: Assets/Scenes/Cutscene3/Level3 CutsceneSc6.unity
+    guid: 218b884c6c463424e911e991f6e06b27
+  - enabled: 1
+    path: Assets/Scenes/Cutscene3/Level3 CutsceneSc7.unity
+    guid: 459acb7c994635d4eb45cdf7ff51dc5c
+  - enabled: 1
+    path: Assets/Scenes/Cutscene3/Level3 CutsceneSc8.unity
+    guid: 9f3bbfe6a15a79f46990af8b6b4d1c96
+  - enabled: 1
+    path: Assets/Scenes/Cutscene3/Level3 CutsceneSc9.unity
+    guid: 16558204ad885b9438495bad3404efe5
+  - enabled: 1
+    path: Assets/Scenes/Cutscene3/Level3 CutsceneSc10.unity
+    guid: c13a1e01554b515458b5f39f339875ba
+  - enabled: 1
+    path: Assets/Scenes/Cutscene3/Level3 CutsceneSc11.unity
+    guid: da34689b397f9af4d84aba2effed6912
+  - enabled: 1
+    path: Assets/Scenes/Cutscene3/Level3 CutsceneSc12.unity
+    guid: 1111dd0d6c6556f4ead9590dff919ad7
+  - enabled: 1
+    path: Assets/Scenes/Level3 loading.unity
+    guid: 058ff52224ae05941a51d758a0bde6b2
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: 3ec93de6d2809424a92d59999e74683b
+  - enabled: 1
+    path: Assets/Scenes/Level3 complete.unity
+    guid: 7e6617dd935caf6439bfe3ce89dcf760
+  - enabled: 1
+    path: Assets/Scenes/credit.unity
+    guid: 3822ac50bb0a25140907434bd52910c2
   m_configObjects: {}

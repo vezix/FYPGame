@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -12196,7 +12196,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh847692
+  m_Name: pb_Mesh60832
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -15810,10 +15810,10 @@ RectTransform:
   m_Father: {fileID: 8677793449237166777}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 39.253998}
-  m_SizeDelta: {x: 275.26782, y: 40.553207}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.0016479492, y: -200.75}
+  m_SizeDelta: {x: -578.7322, y: -439.44678}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &5701919708103466124
 GameObject:
@@ -17234,8 +17234,10 @@ MonoBehaviour:
   timeText: {fileID: 8677793448833258339}
   GameoverDisplay: {fileID: 8677793448904179149}
   PauseDisplay: {fileID: 8677793449775900677}
-  lvlcomplete: level1 complete
+  lvlcomplete: Level Selection
   PController: {fileID: 2848316334637217927}
+  reloadScene: Level1
+  numberofitemsObjective: 0
 --- !u!1 &7947264602434310250
 GameObject:
   m_ObjectHideFlags: 0
@@ -21341,10 +21343,10 @@ RectTransform:
   m_Father: {fileID: 8677793449237166777}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 53.25}
-  m_SizeDelta: {x: 521.04785, y: 68.544556}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -214.75}
+  m_SizeDelta: {x: -332.95215, y: -411.45544}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &8677793448961051425
 GameObject:

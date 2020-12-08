@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class LevelSelection : MonoBehaviour
 {
     public Button[] lvlButtons;
+    public GameObject Extra;
     public string level1cutscenename;
     public string level2cutscenename;
     public string level3cutscenename;
@@ -20,6 +21,10 @@ public class LevelSelection : MonoBehaviour
         {
             if (i +1> levelAt)
                 lvlButtons[i].interactable = false;
+        }
+        if (PlayerPrefs.GetInt("levelAt") >= 4)
+        {
+            Extra.SetActive(true);
         }
     }
 
@@ -35,7 +40,7 @@ public class LevelSelection : MonoBehaviour
 
     public void level2()
     {
-        SceneManager.LoadScene(level1cutscenename);
+        SceneManager.LoadScene(level2cutscenename);
     }
     public void level3()
     {

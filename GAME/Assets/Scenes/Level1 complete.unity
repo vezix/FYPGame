@@ -155,7 +155,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -5.6361, y: 47.555}
+  m_AnchoredPosition: {x: -5.6361084, y: 47.554993}
   m_SizeDelta: {x: -81.727905, y: -272.50778}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &34237686
@@ -291,12 +291,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 389544308}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 208.75, y: -222.64}
-  m_SizeDelta: {x: -510.50055, y: -477.3344}
+  m_AnchoredPosition: {x: 231.87, y: -198.89}
+  m_SizeDelta: {x: -556.75024, y: -429.8367}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &113652658
 MonoBehaviour:
@@ -414,8 +414,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -167.8, y: 218}
-  m_SizeDelta: {x: -390.54532, y: -477.61734}
+  m_AnchoredPosition: {x: -167.8, y: 185.25}
+  m_SizeDelta: {x: -390.54532, y: -412.11038}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &206539297
 MonoBehaviour:
@@ -486,10 +486,10 @@ RectTransform:
   - {fileID: 206539296}
   - {fileID: 34237685}
   - {fileID: 685549959}
-  - {fileID: 113652657}
+  - {fileID: 848731091}
   - {fileID: 939255336}
   - {fileID: 1072778524}
-  - {fileID: 848731091}
+  - {fileID: 113652657}
   - {fileID: 959424961}
   - {fileID: 777030932}
   m_Father: {fileID: 1591439184}
@@ -571,8 +571,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -2.8181152, y: -129.2}
-  m_SizeDelta: {x: -76.0918, y: -444.4461}
+  m_AnchoredPosition: {x: -2.8181152, y: -98.1}
+  m_SizeDelta: {x: -76.0918, y: -395.93863}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &685549960
 MonoBehaviour:
@@ -812,12 +812,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 389544308}
-  m_RootOrder: 6
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -5.6361084, y: -128.61}
-  m_SizeDelta: {x: -81.727844, y: -433.16776}
+  m_AnchoredPosition: {x: -5.6361084, y: -102.95}
+  m_SizeDelta: {x: -81.727844, y: -381.9773}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &939255335
 GameObject:
@@ -853,8 +853,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -154, y: 218}
-  m_SizeDelta: {x: -362.94763, y: -477.6178}
+  m_AnchoredPosition: {x: -154, y: 185.25}
+  m_SizeDelta: {x: -362.94763, y: -412.10977}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &939255337
 MonoBehaviour:
@@ -1164,6 +1164,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1677454991}
   - component: {fileID: 1677454990}
+  - component: {fileID: 1677454992}
   m_Layer: 0
   m_Name: LevelComplete
   m_TagString: Untagged
@@ -1186,8 +1187,14 @@ MonoBehaviour:
   scoreDisplay: {fileID: 1072778525}
   scoreTotal: {fileID: 959424962}
   scoreComments: {fileID: 848731089}
+  Total: 0
   minimumScore: 300
   unlocklevel: 2
+  win1: you've learned the importance of time and focusing objectives while shopping!
+  win2: goodjob! let's proceed onto next objective!
+  lose: nice try... but i believe you can do better, lets try again!
+  proceedScene: level select
+  finalLevel: 0
 --- !u!4 &1677454991
 Transform:
   m_ObjectHideFlags: 0
@@ -1202,6 +1209,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1677454992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677454989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b716801409383234492b677913dc2a02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelScore: level1score
 --- !u!1 &1910631925
 GameObject:
   m_ObjectHideFlags: 0
