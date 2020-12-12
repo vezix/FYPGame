@@ -21,6 +21,10 @@ public class GameManager : MonoBehaviour
     public PlayerController PController;
     public string reloadScene="Level1";
 
+    //countdown timer
+    public int CountdownTime = 3;
+    public Text CountdownDisplay;
+    public CameraController CController;
     //forcalculating wrong items at checkout/score 
     public int numberofitemsObjective;
 
@@ -29,10 +33,37 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1;
         goldText.text = "Money: " + currentGold;
-        timerIsRunning = true;
         Score.gold = 0;
         Score.timeleft = 0;
         Score.wrongObjectives = 0;
+        DisplayTime(timeRemaining);
+        PController.enabled = false;
+        CController.enabled = false;
+        StartCoroutine(CountdownToStart());
+    }
+
+    IEnumerator CountdownToStart()
+    {
+        while (CountdownTime > 0)
+        {
+            CountdownDisplay.text = CountdownTime.ToString();
+
+            yield return new WaitForSeconds(1f);
+            CountdownTime--;
+        }
+
+        CountdownDisplay.text = "Go!";
+        GameBegin();
+        yield return new WaitForSeconds(1f);
+
+        CountdownDisplay.gameObject.SetActive(false);
+    }
+
+    void GameBegin()
+    {
+        timerIsRunning = true;
+        PController.enabled = true;
+        CController.enabled = true;
     }
 
     // Update is called once per frame
