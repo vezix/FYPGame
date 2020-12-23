@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1193,8 +1193,8 @@ MonoBehaviour:
   win1: perfect! you understood the importance between the balance of item quality
     and price!
   win2: We can now proceed onto the next level
-  lose: "that\u2026. Isn\u2019t quiet right\u2026 Let\u2019s try that again one more
-    time shall we?"
+  lose: Either the timer or that you failed to find a cheaper item alternatives with
+    same quality , but thats okay, lets do it again!
   proceedScene: level select
   finalLevel: 0
 --- !u!4 &1677454991

@@ -31,7 +31,7 @@ public class objective : MonoBehaviour
         if (checkitemQuality)
             itemName.text = item.name + ", >= " + quantity;
         else
-        itemName.text = item.name + ", == " + quantity;
+        itemName.text = item.name + ", need " + quantity;
     }
 
     // Update is called once per frame

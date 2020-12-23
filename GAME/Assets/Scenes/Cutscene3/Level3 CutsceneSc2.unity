@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c678b97fb21c5b94b810d8f7c085000b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: Level3 CutsceneSc4
+  scene: Level3 CutsceneSc3
   LevelScene: Level3 loading
   textDisplay: {fileID: 589769481}
   sentences:
