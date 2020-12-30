@@ -14508,7 +14508,7 @@ MonoBehaviour:
   pivot: {fileID: 2848316334614369456}
   maxViewAngle: 45
   minViewAngle: -65
-  invertY: 1
+  invertY: 0
 --- !u!114 &2848316334970320947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17288,6 +17288,7 @@ GameObject:
   - component: {fileID: 7918568173684752983}
   - component: {fileID: 7918568173684752976}
   - component: {fileID: 7918568173684752979}
+  - component: {fileID: 7918568173684752981}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -17295,6 +17296,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7918568173684752981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7918568173684752980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a69a75e5938c8614ba67ddb68eb9ec8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BGSong: TutorialLoader
 --- !u!4 &7918568173684752982
 Transform:
   m_ObjectHideFlags: 0

@@ -488,6 +488,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1138304414}
   - component: {fileID: 1138304413}
+  - component: {fileID: 1138304415}
   m_Layer: 0
   m_Name: DialogManager
   m_TagString: Untagged
@@ -528,6 +529,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1138304415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138304412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a69a75e5938c8614ba67ddb68eb9ec8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BGSong: Home
 --- !u!1 &1484267181
 GameObject:
   m_ObjectHideFlags: 0
