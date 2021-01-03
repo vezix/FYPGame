@@ -31,8 +31,9 @@ public class Inventory : MonoBehaviour
             return false;
         }
         items.Add(item);
+        FindObjectOfType<AudioManager>().PlaySFX("Buy");
 
-        if(onItemChangedCallback != null)
+        if (onItemChangedCallback != null)
         onItemChangedCallback.Invoke();
         return true;
     }
@@ -40,6 +41,7 @@ public class Inventory : MonoBehaviour
     public void Remove(Item item)
     {
         items.Remove(item);
+        FindObjectOfType<AudioManager>().PlaySFX("Sell");
 
         if (onItemChangedCallback != null)
             onItemChangedCallback.Invoke();

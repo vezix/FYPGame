@@ -747,6 +747,7 @@ MonoBehaviour:
   - 'Aniq? Aniq buat apa tu? '
   typingSpeed: 0.03
   continueButton: {fileID: 189423134}
+  SFXSound: MomVoice
 --- !u!4 &1037246953
 Transform:
   m_ObjectHideFlags: 0

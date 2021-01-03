@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2443,7 +2443,68 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     source: {fileID: 0}
-    loop: 1
+    loop: 0
+  soundSFX:
+  - name: NPCVoice
+    clip: {fileID: 8300000, guid: 7e8b284d4a4520746964cbcbb1db0c8e, type: 3}
+    volume: 0.6
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: ScientistVoice
+    clip: {fileID: 8300000, guid: 24e2fa7fc5ccf4d43952f028d80e7e38, type: 3}
+    volume: 0.6
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: MomVoice
+    clip: {fileID: 8300000, guid: 23310e3976c8dc44ea6cb2813990423f, type: 3}
+    volume: 0.6
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: Coin
+    clip: {fileID: 8300000, guid: ce3f853befde1374095c3f8ed0d40d47, type: 3}
+    volume: 1
+    pitch: 1.5
+    source: {fileID: 0}
+    loop: 0
+  - name: Buy
+    clip: {fileID: 8300000, guid: f4dc3d39f80908f46b598490d9062f31, type: 3}
+    volume: 1
+    pitch: 2
+    source: {fileID: 0}
+    loop: 0
+  - name: Sell
+    clip: {fileID: 8300000, guid: 34ffebf99f86cb34b8e3b2c821f5c43f, type: 3}
+    volume: 1
+    pitch: 2
+    source: {fileID: 0}
+    loop: 0
+  - name: Objective
+    clip: {fileID: 8300000, guid: 8e9c6df72ffe755488e4c67b364c1774, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: Inventory
+    clip: {fileID: 8300000, guid: bdcbb46291e1ab74c9e6e836e6227f34, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: ItemFound
+    clip: {fileID: 8300000, guid: 44207b93ebb11cb439a7a22f7524b803, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: TryAgain
+    clip: {fileID: 8300000, guid: dcff56434be2bba4e965b8df75302fdb, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
 --- !u!4 &867092139
 Transform:
   m_ObjectHideFlags: 0

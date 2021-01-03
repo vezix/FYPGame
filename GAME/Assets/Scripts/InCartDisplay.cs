@@ -46,6 +46,7 @@ public class InCartDisplay : MonoBehaviour
     public void closePanel()
     {
         cartDisplay.SetActive(false);
+        FindObjectOfType<AudioManager>().PlaySFX("Inventory");
         PController.enabled = true;
         //Time.timeScale = 1f;
         Cursor.lockState = CursorLockMode.Locked;

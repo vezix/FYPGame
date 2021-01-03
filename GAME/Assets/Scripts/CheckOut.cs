@@ -42,6 +42,7 @@ public class CheckOut : MonoBehaviour
                 Score.gold += FindObjectOfType<GameManager>().currentGold;
                 Score.timeleft += FindObjectOfType<GameManager>().timeRemaining;
                 ItemFound.text = "All of the item has been found!";
+                FindObjectOfType<AudioManager>().PlaySFX("ItemFound");
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
                 Time.timeScale = 0f;
@@ -57,6 +58,7 @@ public class CheckOut : MonoBehaviour
                 Cursor.visible = true;
                 Time.timeScale = 0f;
                 counterPanel.SetActive(true);
+                FindObjectOfType<AudioManager>().PlaySFX("TryAgain");
                 Debug.Log("Item Not Found");
             }
         }

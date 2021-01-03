@@ -16,6 +16,7 @@ public class Dialog_Manager : MonoBehaviour
 
     public float typingSpeed;
     public GameObject continueButton;
+    public string SFXSound="NPCVoice";
 
     //public void Start()
     //{
@@ -74,6 +75,7 @@ public class Dialog_Manager : MonoBehaviour
         foreach (char letter in conversation[convoIndex].ToCharArray())
         {
             dialogText.text += letter;
+            FindObjectOfType<AudioManager>().PlaySFX(SFXSound);
             yield return new WaitForSeconds(typingSpeed);
 
         }

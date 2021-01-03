@@ -14,6 +14,7 @@ public class Cutscene : MonoBehaviour
     public float typingSpeed;
 
     public GameObject continueButton;
+    public string SFXSound = "ScientistVoice";
 
     void Start()
     {
@@ -36,6 +37,7 @@ public class Cutscene : MonoBehaviour
        foreach (char letter in sentences[index].ToCharArray())
         {
             textDisplay.text += letter;
+            FindObjectOfType<AudioManager>().PlaySFX(SFXSound);
             yield return new WaitForSeconds(typingSpeed);
             
         }

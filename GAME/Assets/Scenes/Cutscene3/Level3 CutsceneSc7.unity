@@ -1339,6 +1339,7 @@ MonoBehaviour:
   - Here are what your robot will buy, Aniq!
   typingSpeed: 0.03
   continueButton: {fileID: 344551213}
+  SFXSound: MomVoice
 --- !u!4 &1751701823
 Transform:
   m_ObjectHideFlags: 0

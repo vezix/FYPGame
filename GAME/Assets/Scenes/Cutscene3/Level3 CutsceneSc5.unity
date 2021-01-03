@@ -288,6 +288,7 @@ MonoBehaviour:
     proper shopping as instructed!"
   typingSpeed: 0.03
   continueButton: {fileID: 53283521}
+  SFXSound: MomVoice
 --- !u!4 &487334232
 Transform:
   m_ObjectHideFlags: 0

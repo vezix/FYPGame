@@ -12,6 +12,7 @@ public class GoldPickup : MonoBehaviour
         if(other.tag == "Player")
         {
             FindObjectOfType<GameManager>().AddGold(value);
+            FindObjectOfType<AudioManager>().PlaySFX("Coin");
             Destroy(gameObject);
         }
     }

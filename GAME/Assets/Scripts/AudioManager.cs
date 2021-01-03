@@ -5,6 +5,7 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     public Sound[] soundBG;
+    public Sound[] soundSFX;
 
     public static AudioManager instance;
     private void Awake()
@@ -20,6 +21,16 @@ public class AudioManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
         
         foreach (Sound s in soundBG)
+        {
+            s.source = gameObject.AddComponent<AudioSource>();
+            s.source.clip = s.clip;
+
+            s.source.volume = s.volume;
+            s.source.pitch = s.pitch;
+            s.source.loop = s.loop;
+        }
+
+        foreach (Sound s in soundSFX)
         {
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clip;
@@ -59,6 +70,18 @@ public class AudioManager : MonoBehaviour
         }
         else Debug.Log("Sound: " + name + " is Stopped!");
         s.source.Stop();
+    }
+
+    public void PlaySFX(string name)
+    {
+        Sound s = Array.Find(soundSFX, sound => sound.name == name);
+        if (s == null)
+        {
+            Debug.LogWarning("Sound: " + name + " not found!");
+            return;
+        }
+        else Debug.Log("Sound: " + name + " is Playing!");
+        s.source.Play();
     }
 
 }

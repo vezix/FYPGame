@@ -72,6 +72,7 @@ public class GameManager : MonoBehaviour
         if (Cursor.lockState == CursorLockMode.Locked && Input.GetKeyDown(KeyCode.V))
         {
             cartDisplay.SetActive(true);
+            FindObjectOfType<AudioManager>().PlaySFX("Inventory");
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
             PController.enabled = false;

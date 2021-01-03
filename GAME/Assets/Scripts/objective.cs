@@ -64,6 +64,7 @@ public class objective : MonoBehaviour
         if (Check)
         {
             checkbox.enabled = true;
+            //FindObjectOfType<AudioManager>().PlaySFX("Objective");
         }
         else checkbox.enabled = false;
     }
