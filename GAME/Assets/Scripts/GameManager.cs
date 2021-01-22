@@ -13,7 +13,8 @@ public class GameManager : MonoBehaviour
 
     public float timeRemaining;
     public Text timeText;
-    bool timerIsRunning = false;
+    [HideInInspector]
+    public bool timerIsRunning = false;
 
     public GameObject GameoverDisplay;
     public GameObject PauseDisplay;
@@ -76,7 +77,7 @@ public class GameManager : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
             PController.enabled = false;
-            //Time.timeScale = 0f;
+            Time.timeScale = 0f;
         }
 
         if (Cursor.lockState == CursorLockMode.Locked && Input.GetKeyDown(KeyCode.Escape))

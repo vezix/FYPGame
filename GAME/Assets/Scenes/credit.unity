@@ -285,7 +285,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 162.7, y: -145.5}
+  m_AnchoredPosition: {x: 162.7, y: -136}
   m_SizeDelta: {x: 325.4239, y: 406.0622}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &431182259
@@ -322,7 +322,8 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Amirul Haikal\n\nAmirul Haikal \n\nAmirul Haikal\n\nAmirul Haikal\n\nAmirul
     Haikal\n\nAmirul Haikal\n\nAmirul Haikal\n\nKirby, Undertale and Free Royalty
-    Music\n\n\nDr. Nurul, Sir Syamsul, Nurul Iman Anis, geng kelas 3B, Keluarga"
+    Music\n\nDr. Nurul, Sir Syamsul, Nurul Iman Anis, geng kelas 3B, Kawan-Kawan,
+    Keluarga"
 --- !u!222 &431182260
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -959,7 +960,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -96.4, y: -145.5}
+  m_AnchoredPosition: {x: -96.4, y: -136}
   m_SizeDelta: {x: 192.72043, y: 406.0622}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1476156646
@@ -1017,7 +1018,6 @@ MonoBehaviour:
 
 
     Music
-
 
 
     Special Thanks'

@@ -49,6 +49,14 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    public void stopAllSFX()
+    {
+        foreach (Sound s in soundSFX)
+        {
+            s.source.Stop();
+        }
+    }
+
     public void PlayBG (string name)
     {
        Sound s = Array.Find(soundBG, sound => sound.name == name);

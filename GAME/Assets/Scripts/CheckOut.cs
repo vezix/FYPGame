@@ -42,14 +42,17 @@ public class CheckOut : MonoBehaviour
                 Score.gold += FindObjectOfType<GameManager>().currentGold;
                 Score.timeleft += FindObjectOfType<GameManager>().timeRemaining;
                 ItemFound.text = "All of the item has been found!";
+                FindObjectOfType<AudioManager>().stopAllBG();
                 FindObjectOfType<AudioManager>().PlaySFX("ItemFound");
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
-                Time.timeScale = 0f;
+                FindObjectOfType<GameManager>().timerIsRunning = false;
+                //Time.timeScale = 0f;
+                FindObjectOfType<PlayerController>().enabled = false;
                 counterPanel.SetActive(true);
                 Debug.Log("Objective Completed");
                 Button.SetActive(false);
-                NextSceneButton.SetActive(true);
+                StartCoroutine(EndSong());
 
             }
             else
@@ -62,6 +65,12 @@ public class CheckOut : MonoBehaviour
                 Debug.Log("Item Not Found");
             }
         }
+    }
+
+    IEnumerator EndSong()
+    {
+            yield return new WaitForSeconds(4f);
+            NextSceneButton.SetActive(true);
     }
 
     public void closePanel()

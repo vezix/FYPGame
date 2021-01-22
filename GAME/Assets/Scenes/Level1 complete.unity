@@ -414,8 +414,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -167.8, y: 185.25}
-  m_SizeDelta: {x: -390.54532, y: -412.11038}
+  m_AnchoredPosition: {x: -93.4, y: 185.25}
+  m_SizeDelta: {x: -241.69653, y: -412.11038}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &206539297
 MonoBehaviour:
@@ -853,8 +853,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -154, y: 185.25}
-  m_SizeDelta: {x: -362.94763, y: -412.10977}
+  m_AnchoredPosition: {x: -93.4, y: 185.25}
+  m_SizeDelta: {x: -241.69794, y: -412.10977}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &939255337
 MonoBehaviour:
@@ -888,7 +888,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Congratulations!
+  m_Text: Congratulations! Level 1 complete
 --- !u!222 &939255338
 CanvasRenderer:
   m_ObjectHideFlags: 0

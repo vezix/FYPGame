@@ -35,6 +35,7 @@ public class Dialog_Manager : MonoBehaviour
         //ShowText();
         Displaytext();
         PController.enabled = false;
+        FindObjectOfType<GameManager>().timerIsRunning = false;
     }
 
     public void Update()
@@ -96,6 +97,7 @@ public class Dialog_Manager : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
             dialogpanel.SetActive(false);
             PController.enabled = true;
+            FindObjectOfType<GameManager>().timerIsRunning = true;
             //hasInteract = true;
             dialogText.text = "";
             convoIndex = 0;

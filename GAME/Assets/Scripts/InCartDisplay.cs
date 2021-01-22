@@ -48,7 +48,7 @@ public class InCartDisplay : MonoBehaviour
         cartDisplay.SetActive(false);
         FindObjectOfType<AudioManager>().PlaySFX("Inventory");
         PController.enabled = true;
-        //Time.timeScale = 1f;
+        Time.timeScale = 1f;
         Cursor.lockState = CursorLockMode.Locked;
     }
 }

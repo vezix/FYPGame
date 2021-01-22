@@ -68,18 +68,26 @@ public class ItemIsleDisplay : MonoBehaviour
         {
             if (triggerArea.quantity[i] > 0)
             {
-                FindObjectOfType<GameManager>().RemoveGold(truePrice[i]);                
-                if(inventory.Add(item)) triggerArea.quantity[i] -= 1; ;
+                FindObjectOfType<GameManager>().RemoveGold(truePrice[i]);
+                if (inventory.Add(item)) triggerArea.quantity[i] -= 1; ;
                 itemLeftDisplay.text = "Item left:" + triggerArea.quantity[i];
                 NoInCart.text = "In Cart:" + inventory.quantity(item);
             }
-            else Debug.Log("No Item Left");
+            else
+            {
+                Debug.Log("No Item Left");
+                FindObjectOfType<AudioManager>().PlaySFX("NotEnoughMoney");
+            }
         }
-        else Debug.Log("you poor soul");
-        
+        else
+        {
+            Debug.Log("you poor soul");
+            FindObjectOfType<AudioManager>().PlaySFX("NotEnoughMoney");
+        }
+
     }
 
-    public void ItemRemovefromCart()
+        public void ItemRemovefromCart()
     {
         //triggerArea.quantity[i] < triggerArea.returnMax(i)
         if (inventory.quantity(item)>0)
