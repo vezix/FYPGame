@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: GoldGradient
   m_EditorClassIdentifier: 
   colorMode: 3
-  topLeft: {r: 1, g: 0.983129, b: 0.2783019, a: 1}
-  topRight: {r: 1, g: 0.9843138, b: 0.2784314, a: 1}
-  bottomLeft: {r: 0.9811321, g: 0.833442, b: 0.5229619, a: 1}
-  bottomRight: {r: 0.9803922, g: 0.8352942, b: 0.52156866, a: 1}
+  topLeft: {r: 1, g: 0.8000001, b: 0, a: 1}
+  topRight: {r: 1, g: 0.8000001, b: 0, a: 1}
+  bottomLeft: {r: 0.9929181, g: 1, b: 0.6650944, a: 1}
+  bottomRight: {r: 0.9921569, g: 1, b: 0.6666667, a: 1}
