@@ -7,6 +7,13 @@ public class CheckOut : MonoBehaviour
 {
     Inventory inventory;
     public GameObject counterPanel;
+    public GameObject star;
+    public GameObject star1;
+    public GameObject star2;
+    public float startime;
+    public float star1time;
+    public float star2time;
+
     public Text ItemFound;
     public GameObject Button;
     public GameObject NextSceneButton;
@@ -42,6 +49,7 @@ public class CheckOut : MonoBehaviour
                 Score.gold += FindObjectOfType<GameManager>().currentGold;
                 Score.timeleft += FindObjectOfType<GameManager>().timeRemaining;
                 ItemFound.text = "All of the item has been found!";
+                DisplayStar(Score.timeleft);
                 FindObjectOfType<AudioManager>().stopAllBG();
                 FindObjectOfType<AudioManager>().PlaySFX("ItemFound");
                 Cursor.lockState = CursorLockMode.None;
@@ -78,6 +86,14 @@ public class CheckOut : MonoBehaviour
         counterPanel.SetActive(false);
         Time.timeScale = 1f;
         Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    void DisplayStar(float time)
+    {
+        if (time > startime) star.SetActive(true);
+        if (time > star1time) star1.SetActive(true);
+        if (time > star2time) star2.SetActive(true);
+
     }
 
 

@@ -22,7 +22,7 @@ public class ItemIsleDisplay : MonoBehaviour
     private Item item;
     //setting array number
     //private int i;
-    
+
     public void itemIsleSet()
     { 
 
@@ -72,6 +72,7 @@ public class ItemIsleDisplay : MonoBehaviour
                 if (inventory.Add(item)) triggerArea.quantity[i] -= 1; ;
                 itemLeftDisplay.text = "Item left:" + triggerArea.quantity[i];
                 NoInCart.text = "In Cart:" + inventory.quantity(item);
+
             }
             else
             {
@@ -97,6 +98,8 @@ public class ItemIsleDisplay : MonoBehaviour
             inventory.Remove(item);
             itemLeftDisplay.text = "Item left:" + triggerArea.quantity[i];
             NoInCart.text = "In Cart:" + inventory.quantity(item);
+
+
         }
     }
 
