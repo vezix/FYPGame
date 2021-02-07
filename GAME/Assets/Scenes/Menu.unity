@@ -2475,7 +2475,7 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
     loop: 1
-  - group: {fileID: 0}
+  - group: {fileID: 24300002, guid: 08f6a358fc0fc9d4f9bb8c96ae02c02c, type: 2}
     name: LevelSelect
     clip: {fileID: 8300000, guid: c45c786f86186e64a86e3e3d166e3321, type: 3}
     volume: 1
@@ -2489,7 +2489,7 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
     loop: 1
-  - group: {fileID: 24300002, guid: 08f6a358fc0fc9d4f9bb8c96ae02c02c, type: 2}
+  - group: {fileID: 0}
     name: Credits
     clip: {fileID: 8300000, guid: d5aa654b48669504886a89d7616fdf15, type: 3}
     volume: 1
@@ -2503,7 +2503,7 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
     loop: 0
-  - group: {fileID: 0}
+  - group: {fileID: 24300002, guid: 08f6a358fc0fc9d4f9bb8c96ae02c02c, type: 2}
     name: Home
     clip: {fileID: 8300000, guid: 7e8354e1cf06b154191cbbe29bce87ee, type: 3}
     volume: 1
@@ -2524,7 +2524,7 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
     loop: 1
-  - group: {fileID: 24300002, guid: 08f6a358fc0fc9d4f9bb8c96ae02c02c, type: 2}
+  - group: {fileID: 0}
     name: StageClear
     clip: {fileID: 8300000, guid: 495252edcaa1de746b73232c38e1075f, type: 3}
     volume: 1
@@ -3628,6 +3628,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioMixer: {fileID: 24100000, guid: 08f6a358fc0fc9d4f9bb8c96ae02c02c, type: 2}
+  cam: {fileID: 0}
 --- !u!114 &1431956901
 MonoBehaviour:
   m_ObjectHideFlags: 0
