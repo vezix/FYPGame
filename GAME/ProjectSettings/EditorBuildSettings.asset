@@ -12,6 +12,30 @@ EditorBuildSettings:
     path: Assets/Scenes/Level Select.unity
     guid: 75488c69c7cc8934d961a9a3bbf789ff
   - enabled: 1
+    path: Assets/Scenes/TutorialCutscene/TutoCutscene.unity
+    guid: c2f3782fcada96741b80e9fdef8a182b
+  - enabled: 1
+    path: Assets/Scenes/TutorialCutscene/TutoCutscene1.unity
+    guid: 5c95841636b73ee4a889d52e92f4b39f
+  - enabled: 1
+    path: Assets/Scenes/TutorialCutscene/TutoCutscene2.unity
+    guid: 42aaa2c167b9a674fa346f0011745560
+  - enabled: 1
+    path: Assets/Scenes/TutorialCutscene/TutoCutscene3.unity
+    guid: 3ad62d552a9e84649ae0625e2ed38361
+  - enabled: 1
+    path: Assets/Scenes/TutorialCutscene/TutoCutscene4.unity
+    guid: 7ffba29bbf08dc040a2ba80bfbb5dc69
+  - enabled: 1
+    path: Assets/Scenes/TutorialCutscene/TutoCutscene5.unity
+    guid: 1523aa230dd56b14c9f2b5021f21dbf4
+  - enabled: 1
+    path: Assets/Scenes/TutorialCutscene/TutoCutscene6.unity
+    guid: ceb378b1c083f09489a7d7d3a3d43ee0
+  - enabled: 1
+    path: Assets/Scenes/TutoLevel loading.unity
+    guid: f4492898482d86441b0f46ab559fcfe5
+  - enabled: 1
     path: Assets/Scenes/TutoLevel.unity
     guid: a9eb4825df6a7454090917bf9153131c
   - enabled: 1

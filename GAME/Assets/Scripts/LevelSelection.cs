@@ -51,7 +51,7 @@ public class LevelSelection : MonoBehaviour
 
     public void levelTuto()
     {
-        SceneManager.LoadScene("TutoLevel");
+        SceneManager.LoadScene("TutoCutscene");
     }
 
 }
