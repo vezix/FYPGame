@@ -746,8 +746,8 @@ MonoBehaviour:
   sentences:
   - Changing the visual input... Done!
   - This is the Level Loader screen,
-  - In this place, you will plan out your plan to complete the game's objective which
-    is bying items!
+  - In this place, you will plan out your way to complete the game's objective which
+    is buying items!
   typingSpeed: 0.03
   continueButton: {fileID: 1863292706}
   SFXSound: ScientistVoice
