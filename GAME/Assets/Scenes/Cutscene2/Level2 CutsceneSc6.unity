@@ -1160,12 +1160,13 @@ MonoBehaviour:
   LevelScene: Level2 loading
   textDisplay: {fileID: 1627945298}
   sentences:
-  - 'however, we are not most people and believe balance between quality and price
-    should be a priority '
-  - therefore! for your next test, it will be focusing on balancing both quality
-    and price!
+  - 'however, we are not most people and believe the balance between quality and
+    price should be a priority.  '
+  - Therefore! Your next test will be focusing on balancing both quality and price!
+    Therefore! Your next test will be focusing on balancing both quality and price!
   typingSpeed: 0.03
   continueButton: {fileID: 1860263777}
+  SFXSound: ScientistVoice
 --- !u!4 &1862696719
 Transform:
   m_ObjectHideFlags: 0

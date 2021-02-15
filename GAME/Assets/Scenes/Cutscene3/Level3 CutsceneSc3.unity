@@ -269,12 +269,13 @@ MonoBehaviour:
   LevelScene: Level3 loading
   textDisplay: {fileID: 2117341160}
   sentences:
-  - "Since the last test is to teach you about balancing between a quality product
-    vs it\u2019s price, "
-  - this time I am gonna test your ability by adding another criteria you must juggle,
-    which is ITEM EXPIRY!
+  - 'Since the last test is to teach you about balancing between a quality product
+    versus its price, '
+  - 'This time I am going to test your ability by adding another criteria you must
+    juggle: ITEM EXPIRY!'
   typingSpeed: 0.03
   continueButton: {fileID: 1770444184}
+  SFXSound: ScientistVoice
 --- !u!4 &685501188
 Transform:
   m_ObjectHideFlags: 0

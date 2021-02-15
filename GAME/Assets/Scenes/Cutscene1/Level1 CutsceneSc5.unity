@@ -461,9 +461,10 @@ MonoBehaviour:
   LevelScene: Level1 loading
   textDisplay: {fileID: 209631927}
   sentences:
-  - "Alright!! Let\u2019s make this dream  a reality! Im counting on you roboto!!"
+  - All right! Let us make this dream a reality! I am counting on you, Roboto!
   typingSpeed: 0.03
   continueButton: {fileID: 350845404}
+  SFXSound: ScientistVoice
 --- !u!4 &327998830
 Transform:
   m_ObjectHideFlags: 0

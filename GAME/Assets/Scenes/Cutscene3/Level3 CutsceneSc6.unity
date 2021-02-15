@@ -1131,9 +1131,10 @@ MonoBehaviour:
   LevelScene: Level3 loading
   textDisplay: {fileID: 1898234607}
   sentences:
-  - Mom!? what are you doing here!?
+  - Mom! what are you doing here!?
   typingSpeed: 0.03
   continueButton: {fileID: 826942731}
+  SFXSound: ScientistVoice
 --- !u!4 &1865815720
 Transform:
   m_ObjectHideFlags: 0

@@ -983,13 +983,14 @@ MonoBehaviour:
   LevelScene: Level3 loading
   textDisplay: {fileID: 1890462830}
   sentences:
-  - oh OH!!!! i understand now!
-  - "okay now for the actual test run , this time it\u2019s for real, test area will
-    be on the crowdest day for the mall,  and the item you\u2019ll need to buy are:"
+  - oh, Oh! I finally understand now!
+  - Okay, now for the actual test run, this time it is for real. The test area will
+    be on the crowdest day for the mall,  and the item you will need to buy are
   - 1 Spice A, 1 Spice E, 1 Spice J, 1 DIY B,1 Rice C,1 Cheap Soap , any 2 Veggies
     with expiry bigger than 2 ,any 2 Frozen with expiry bigger than 4,
   typingSpeed: 0.03
   continueButton: {fileID: 1587976320}
+  SFXSound: ScientistVoice
 --- !u!4 &1196685509
 Transform:
   m_ObjectHideFlags: 0

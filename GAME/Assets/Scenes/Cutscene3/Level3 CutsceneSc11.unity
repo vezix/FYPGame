@@ -1239,9 +1239,10 @@ MonoBehaviour:
   LevelScene: Level3 loading
   textDisplay: {fileID: 1148937824}
   sentences:
-  - alright DO YOUR BEST!!
+  - all right, DO YOUR BEST!!
   typingSpeed: 0.03
   continueButton: {fileID: 1640319130}
+  SFXSound: ScientistVoice
 --- !u!4 &1730848044
 Transform:
   m_ObjectHideFlags: 0

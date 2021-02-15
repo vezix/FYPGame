@@ -1145,11 +1145,12 @@ MonoBehaviour:
   LevelScene: Level3 loading
   textDisplay: {fileID: 1327271658}
   sentences:
-  - "This way you\u2019ll understand the importance between item quality , its price
-    and it\u2019s longevity! Thus helping consumers deciding on buying items most
-    beneficial for them!"
+  - This way, you will understand the importance between item quality, its price,
+    and its longevity! Thus help consumers deciding on buying items most beneficial
+    for them.
   typingSpeed: 0.03
   continueButton: {fileID: 1849083979}
+  SFXSound: ScientistVoice
 --- !u!4 &1629993532
 Transform:
   m_ObjectHideFlags: 0

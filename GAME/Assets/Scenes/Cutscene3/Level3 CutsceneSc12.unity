@@ -889,12 +889,13 @@ MonoBehaviour:
   LevelScene: Level3 loading
   textDisplay: {fileID: 1269534562}
   sentences:
-  - Now before we begin, I heard some items  are on sale today! Such as veggies,
-    frozen and soap! Lucky you!
-  - It would help a lot on saving your money when choosing what item you should buy!
+  - Now, before we begin, I heard some items are on sale today! Such as veggies,
+    frozen, and soap! Lucky you!
+  - It would help a lot in saving your money when choosing what item you should buy!
     Good Luck!
   typingSpeed: 0.03
   continueButton: {fileID: 1846029825}
+  SFXSound: ScientistVoice
 --- !u!4 &1544067655
 Transform:
   m_ObjectHideFlags: 0

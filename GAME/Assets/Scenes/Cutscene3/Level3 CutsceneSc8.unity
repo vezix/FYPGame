@@ -1465,9 +1465,10 @@ MonoBehaviour:
   LevelScene: Level3 loading
   textDisplay: {fileID: 431133572}
   sentences:
-  - 'but this is the list of items we currently need- '
+  - but this is the list of items we currently need-
   typingSpeed: 0.03
   continueButton: {fileID: 609916007}
+  SFXSound: ScientistVoice
 --- !u!4 &2008453800
 Transform:
   m_ObjectHideFlags: 0

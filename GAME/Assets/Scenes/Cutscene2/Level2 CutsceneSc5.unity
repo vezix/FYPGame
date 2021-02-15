@@ -590,10 +590,11 @@ MonoBehaviour:
   textDisplay: {fileID: 357913596}
   sentences:
   - 'from the data gathered on the shopping mall, '
-  - 'most people either spends too much money recklessly on known brands for quality '
+  - 'most people either do not spend too much recklessly on known brands for quality '
   - 'or goes for the cheapest despite how bad the quality is. '
   typingSpeed: 0.03
   continueButton: {fileID: 188849878}
+  SFXSound: ScientistVoice
 --- !u!4 &720450590
 Transform:
   m_ObjectHideFlags: 0

@@ -438,9 +438,10 @@ MonoBehaviour:
   LevelScene: Level1 loading
   textDisplay: {fileID: 602202248}
   sentences:
-  - is this finally it!?? Oh! OH!!!
+  - Is this finally it!?? Oh! OH!!!
   typingSpeed: 0.03
   continueButton: {fileID: 403905974}
+  SFXSound: ScientistVoice
 --- !u!4 &548765373
 Transform:
   m_ObjectHideFlags: 0

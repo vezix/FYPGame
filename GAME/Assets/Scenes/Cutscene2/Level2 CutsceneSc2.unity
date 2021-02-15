@@ -818,12 +818,12 @@ MonoBehaviour:
   LevelScene: Level2 loading
   textDisplay: {fileID: 833782637}
   sentences:
-  - 'Good work out there! The first experiment went perfectly! No hiccups whats so
-    ever! '
-  - U did great laying out the foundation on what we should do next!
+  - 'Good work out there! The first experiment went perfectly! No hiccups whatsoever! '
+  - You did great laying out the foundation on what we should do next!
   - everything went perfectly! impressive!
   typingSpeed: 0.03
   continueButton: {fileID: 2081006544}
+  SFXSound: ScientistVoice
 --- !u!4 &945012776
 Transform:
   m_ObjectHideFlags: 0

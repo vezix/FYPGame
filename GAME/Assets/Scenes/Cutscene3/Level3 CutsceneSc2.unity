@@ -154,14 +154,15 @@ MonoBehaviour:
   LevelScene: Level3 loading
   textDisplay: {fileID: 589769481}
   sentences:
-  - "You\u2019ve finally awake! The last test goes exceptionally well and this time
-    we going even up a notch! "
+  - 'You have finally awake! The last test goes exceptionally well, and this time
+    we are going even up a notch! '
   - As an AI, your learning rate is exponential! Even more amazing than what I have
     anticipated!
-  - For your reward, your battery life will increase by another minute! you can run
+  - For your reward, your battery life will increase by another minute! You can run
     full 5 minutes now!
   typingSpeed: 0.03
   continueButton: {fileID: 456860937}
+  SFXSound: ScientistVoice
 --- !u!4 &32296460
 Transform:
   m_ObjectHideFlags: 0

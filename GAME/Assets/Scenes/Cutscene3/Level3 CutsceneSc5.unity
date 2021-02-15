@@ -284,8 +284,8 @@ MonoBehaviour:
   LevelScene: Level3 loading
   textDisplay: {fileID: 1165360374}
   sentences:
-  - "I finally understood what\u2019s going on and this time, you\u2019ll do the
-    proper shopping as instructed!"
+  - I finally understood what is going on, and this time, you will do the proper
+    shopping as instructed!
   typingSpeed: 0.03
   continueButton: {fileID: 53283521}
   SFXSound: MomVoice

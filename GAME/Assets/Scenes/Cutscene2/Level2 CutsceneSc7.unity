@@ -374,12 +374,13 @@ MonoBehaviour:
   LevelScene: Level2 loading
   textDisplay: {fileID: 1786709525}
   sentences:
-  - alright then here is the list of item you need  buy for this 2nd test!
-  - '2 Cheapest Soap,1 Cheapest Veggie,1 Cheapest Spice and 1  Frozen C! '
-  - Another condition would be 3 or more of the item is at least Normal Quality or
-    Higher!
+  - all right then, here is the list of items you need to buy for this 2nd test!
+  - '2 Cheapest Soap, 1 Cheapest Veggie, 1 Cheapest Spice and 1  Frozen C! '
+  - Another condition would be at least 3 or more of the item is at least Normal
+    Quality or Higher!
   typingSpeed: 0.03
   continueButton: {fileID: 2113177314}
+  SFXSound: ScientistVoice
 --- !u!4 &459024558
 Transform:
   m_ObjectHideFlags: 0

@@ -694,10 +694,11 @@ MonoBehaviour:
   LevelScene: Level2 loading
   textDisplay: {fileID: 1862710419}
   sentences:
-  - For the reward, Im increasing the battery life from 3 minutes to 4! You can work
-    longer now!....
+  - For the reward, I am increasing the battery life from 3 minutes to 4! You can
+    work longer now!....
   typingSpeed: 0.03
   continueButton: {fileID: 1479422321}
+  SFXSound: ScientistVoice
 --- !u!4 &942135363
 Transform:
   m_ObjectHideFlags: 0

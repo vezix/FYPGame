@@ -156,9 +156,10 @@ MonoBehaviour:
   textDisplay: {fileID: 1512288774}
   sentences:
   - '80%....90%... '
-  - '100% Fully Charged! Roboto Start!! '
+  - 100% Fully Charged! Roboto Start!
   typingSpeed: 0.03
   continueButton: {fileID: 1060376643}
+  SFXSound: ScientistVoice
 --- !u!4 &216786330
 Transform:
   m_ObjectHideFlags: 0

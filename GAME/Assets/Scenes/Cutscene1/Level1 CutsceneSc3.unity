@@ -1162,15 +1162,16 @@ MonoBehaviour:
   LevelScene: Level1 loading
   textDisplay: {fileID: 1548451860}
   sentences:
-  - finally, it Is operational!, alright from now on your name is Roboto!
+  - Finally, it is operational, all right from now on, your name is Roboto!
+  - 'You are the latest and most advanced AI created by yours truly! '
   - 'Your task is to buy items from the grocery store! '
-  - 'With the latest and most advanced AI created by yours truly! '
-  - I shall train and fine tune you Roboto!, to make sure you would revolutionize
-    the way people shopping!
-  - ' You will be the prime example of what good shopping behaviour people will be
-    striving for! '
+  - 'I shall train and fine-tune you, Roboto, to make sure you would revolutionize
+    the way people shopping!  '
+  - You will be the prime example of what good shopping behaviour people will be
+    striving for!
   typingSpeed: 0.03
   continueButton: {fileID: 716517116}
+  SFXSound: ScientistVoice
 --- !u!4 &1829559936
 Transform:
   m_ObjectHideFlags: 0

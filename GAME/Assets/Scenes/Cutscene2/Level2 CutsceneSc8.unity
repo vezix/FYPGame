@@ -628,14 +628,15 @@ MonoBehaviour:
   LevelScene: Level2 loading
   textDisplay: {fileID: 1146825897}
   sentences:
-  - 'Alright! Now that you know what should you buy! You must be wondering how one
-    distinguish a low quality item from the next right? '
-  - "Don\u2019t worry, it\u2019s very simple! For an item there 3 stage of quality
-    which are "
-  - 0 for low quality, 1 for normal quality and 2 for high quality!  With that you
-    can easily excels this test! Goodluck!
+  - 'all right! Now that you know what you should buy! You must be wondering how
+    one distinguishes a low-quality item from the next, right? '
+  - 'Do not worry. It is very simple! For an item, there three stages of quality,
+    which are '
+  - 0 for low quality, 1 for normal quality, and 2 for high quality!  With that,
+    you can easily excel on this test! Good luck!
   typingSpeed: 0.03
   continueButton: {fileID: 1796474376}
+  SFXSound: ScientistVoice
 --- !u!4 &837268865
 Transform:
   m_ObjectHideFlags: 0
